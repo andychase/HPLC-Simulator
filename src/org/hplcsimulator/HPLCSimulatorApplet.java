@@ -1,6 +1,8 @@
 package org.hplcsimulator;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Image;
@@ -16,6 +18,8 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.awt.image.ComponentColorModel;
 import java.awt.image.ComponentSampleModel;
@@ -40,9 +44,9 @@ import java.util.Vector;
 
 import javax.help.CSH;
 import javax.help.HelpSet;
-import javax.swing.JApplet;
 import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -130,8 +134,9 @@ class Compound implements Serializable
 	}
 }
 
-public class HPLCSimulatorApplet extends JApplet implements ActionListener, ChangeListener, KeyListener, FocusListener, ListSelectionListener, AutoScaleListener, TableModelListener
-{
+public class HPLCSimulatorApplet extends JFrame implements ActionListener, ChangeListener, KeyListener, FocusListener, ListSelectionListener, AutoScaleListener, TableModelListener
+ {
+	
 	private static final long serialVersionUID = 1L;
 	double dFileVersion = 1.13;
 
@@ -201,6 +206,14 @@ public class HPLCSimulatorApplet extends JApplet implements ActionListener, Chan
     
     File m_currentFile = null;
     boolean m_bDocumentChangedFlag = false;
+    
+    public static void main(String args[]){
+    	HPLCSimulatorApplet sim = new HPLCSimulatorApplet(); // create frame with title
+
+    	sim.pack(); // set window to appropriate size (for its elements)
+    	sim.init();	
+    	sim.setVisible(true); // usual step to make frame visible
+     }
 
     public class JFileChooser2 extends JFileChooser
     {
@@ -232,6 +245,14 @@ public class HPLCSimulatorApplet extends JApplet implements ActionListener, Chan
 	public HPLCSimulatorApplet() 
 	{
 	    super();
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	    addWindowListener(new WindowAdapter()
+	    {
+	       public void windowClosing(WindowEvent e)
+	       {
+	         System.exit(0); //calling the method is a must
+	       }
+	    });
 	    
 		try {
 	        //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -258,8 +279,9 @@ public class HPLCSimulatorApplet extends JApplet implements ActionListener, Chan
 	 * 
 	 * @return void
 	 */
-	public void init() 
+	public void init()
 	{
+		
         // Load the JavaHelp
 		String helpHS = "org/hplcsimulator/help/HPLCSimHelp.hs";
 		ClassLoader cl = TopPanel.class.getClassLoader();
@@ -274,21 +296,14 @@ public class HPLCSimulatorApplet extends JApplet implements ActionListener, Chan
 		Globals.hbMainHelpBroker = Globals.hsMainHelpSet.createHelpBroker();
 
 		//Execute a job on the event-dispatching thread; creating this applet's GUI.
-        try {
+
         //    SwingUtilities.invokeAndWait(new Runnable() 
         //    {
         //        public void run() {
                 	createGUI();
         //        }
         //    });
-        } catch (Exception e) { 
-            System.err.println("createGUI didn't complete successfully");
-            System.err.println(e.getMessage());
-            System.err.println(e.getLocalizedMessage());
-            System.err.println(e.toString());
-            System.err.println(e.getStackTrace());
-            System.err.println(e.getCause());
-        }
+
         
     	Compound compound1 = new Compound();
     	compound1.loadCompoundInfo(2, m_iSolventB);
@@ -381,7 +396,7 @@ public class HPLCSimulatorApplet extends JApplet implements ActionListener, Chan
     	contentPane = new TopPanel();
         contentPane.setOpaque(true);
         jMainScrollPane.setViewportView(contentPane);
-    	setContentPane(jMainScrollPane);
+    	setContentPane(contentPane);
     	jMainScrollPane.revalidate();
         
         contentPane.jbtnAddChemical.addActionListener(this);
@@ -1864,7 +1879,7 @@ public class HPLCSimulatorApplet extends JApplet implements ActionListener, Chan
 		else if (m_iSolventB == 1)
 		{
 			// This formula is for methanol/water mixtures:
-			// Based on fit of data (at 1 bar) in Journal of Chromatography A, 1210 (2008) 30–44.
+			// Based on fit of data (at 1 bar) in Journal of Chromatography A, 1210 (2008) 30ï¿½44.
 			m_dEluentViscosity = Math.exp((m_dSolventBFraction * (-4.597 + (1211 / dTempKelvin))) + ((1 - m_dSolventBFraction) * (-5.961 + (1736 / dTempKelvin))) + (m_dSolventBFraction * (1 - m_dSolventBFraction) * (-6.215 + (2809 / dTempKelvin))));
 		}
 		if (!m_bGradientMode)
@@ -2240,7 +2255,7 @@ public class HPLCSimulatorApplet extends JApplet implements ActionListener, Chan
 				else if (m_iSolventB == 1)
 				{
 					// This formula is for methanol/water mixtures:
-					// Based on fit of data (at 1 bar) in Journal of Chromatography A, 1210 (2008) 30–44.
+					// Based on fit of data (at 1 bar) in Journal of Chromatography A, 1210 (2008) 30ï¿½44.
 					dViscosity = Math.exp((dSolventBFraction * (-4.597 + (1211 / dTempKelvin))) + ((1 - dSolventBFraction) * (-5.961 + (1736 / dTempKelvin))) + (dSolventBFraction * (1 - dSolventBFraction) * (-6.215 + (2809 / dTempKelvin))));
 				}
 				

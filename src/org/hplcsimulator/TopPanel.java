@@ -7,7 +7,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Insets;
 import java.awt.Rectangle;
-import javax.media.opengl.*;
+import com.jogamp.opengl.*;
 import java.awt.Point;
 import javax.swing.JButton;
 import java.awt.Dimension;

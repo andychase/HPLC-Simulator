@@ -1,21 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="org/hplcsimulator/|org/hplcsimulator/panels/" kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/javahelp2_0_05/jh2.0/javahelp/lib/jh.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/javahelp2_0_05/jh2.0/javahelp/lib/jhall.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/javahelp2_0_05/jh2.0/javahelp/lib/jhbasic.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/javahelp2_0_05/jh2.0/javahelp/lib/jsearch.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/swingx-1.6.2/swingx-core-1.6.2.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre6"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jogl-1.1.1-windows-amd64/lib/gluegen-rt.jar">
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Program Files (x86)/Java/jogl-1.1.1-windows-amd64/lib"/>
+			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jogl-1.1.1-windows-amd64/lib/jogl.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Program Files (x86)/Java/jogl-1.1.1-windows-amd64/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="output" path="build/classes"/>
+	<classpathentry kind="lib" path="jh.jar"/>
+	<classpathentry kind="lib" path="jhall.jar"/>
+	<classpathentry kind="lib" path="jhbasic.jar"/>
+	<classpathentry kind="lib" path="jsearch.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/swingx-core-1.6.5-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/swingx-all-1.6.5-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-android-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-rt-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/gluegen-test-util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-android-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-test.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/joal-test-android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-android-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-test.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jocl-test-android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-android-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-mobile-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-android-aarch64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-android-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-linux-armv6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-all-noawt-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-test.jar"/>
+	<classpathentry kind="lib" path="C:/Users/andy/Desktop/r/HPLC Simulator/jogl/jar/jogl-test-android.jar"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>

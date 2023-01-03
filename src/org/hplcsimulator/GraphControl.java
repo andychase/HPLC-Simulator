@@ -1,8 +1,8 @@
 package org.hplcsimulator;
 
-import javax.media.opengl.*;
-import javax.media.opengl.awt.GLCanvas;
-import javax.media.opengl.glu.GLU;
+import com.jogamp.opengl.*;
+import com.jogamp.opengl.awt.GLCanvas;
+import com.jogamp.opengl.glu.GLU;
 
 import com.jogamp.opengl.util.awt.TextRenderer;
 
@@ -158,6 +158,8 @@ public class GraphControl extends GLCanvas implements GLEventListener, MouseList
 	double m_dSecondYAxisUpperLimit = 9 * MEGAUNITS;
 	double m_dSecondYAxisLowerLimit = -9 * MEGAUNITS;
 	
+	double dpi = 1;
+	
 	int m_iSecondMajorUnitTypeY;
 	double m_dSecondMajorUnitYTypeValue;
 	double m_dSecondNextMajorUnitYTypeValue;
@@ -270,8 +272,9 @@ public class GraphControl extends GLCanvas implements GLEventListener, MouseList
     	synchronized(this.lockObject)
     	{
         GL2 gl2 = drawable.getGL().getGL2();
-
-        gl2.glViewport(0, 0, this.getWidth(), this.getHeight());
+        dpi = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration().getDefaultTransform().getScaleY();
+       
+        gl2.glViewport(0, 0, (int) (getWidth() * dpi), (int) (this.getHeight() * dpi));
     	gl2.glMatrixMode(GL2.GL_PROJECTION);
     	gl2.glLoadIdentity( );
     	glu.gluOrtho2D(0, this.getWidth(), 0, this.getHeight());
@@ -281,7 +284,7 @@ public class GraphControl extends GLCanvas implements GLEventListener, MouseList
     	
         gl2.glClear(GL.GL_COLOR_BUFFER_BIT);
         
-    	gl2.glLineWidth(1.0f);
+    	gl2.glLineWidth((float) (1.0f * dpi));
 
         DrawGraph();
 
@@ -2236,7 +2239,7 @@ public class GraphControl extends GLCanvas implements GLEventListener, MouseList
     	for (i = 0; i < this.m_vectDataSeries.size(); i++)
     	{
     		//Set up the line
-    		gl2.glLineWidth((float)m_vectDataSeries.get(i).iLineThickness);
+    		gl2.glLineWidth((float) (m_vectDataSeries.get(i).iLineThickness * dpi));
     		//Slows things WAY down to have the line stippling
     		//SetLineStyle(pChannel->m_iLineStyle, pChannel->m_fLineWidth);
 
@@ -2473,7 +2476,7 @@ public class GraphControl extends GLCanvas implements GLEventListener, MouseList
 //    		glDisable(GL_LINE_STIPPLE);
     	}
 
-    	gl2.glLineWidth(1.0f); //Return the line width back to 1;
+    	gl2.glLineWidth((float) (1.0f * dpi)); //Return the line width back to 1;
     }
     
     private void drawZoomBox()
@@ -2483,7 +2486,7 @@ public class GraphControl extends GLCanvas implements GLEventListener, MouseList
     	if (m_iMode != 1 && m_iMode != 2)
     		return;
 
-    	if (m_bZoomToolTracking == true)
+    	if (m_bZoomToolTracking == true) 
     	{
     	//	glEnable(GL_LINE_STIPPLE);
     	//	glLineStipple(1,(WORD)0x5555);
